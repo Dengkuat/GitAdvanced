@@ -111,6 +111,15 @@ Successfully rebased and updated refs/heads/main.
 
 ### 5. Advanced Squashing:
 ```bash
-    
+        DENGKUAT@MacBookPro GitAdvanced % git rebase -i HEAD~2
+    pick 5258535 Create Third File
+    squash 388391b Create Fourth File
+
+    Create third and fourth files
+
+    DENGKUAT@MacBookPro GitAdvanced % git log --oneline
+    865f855 (HEAD -> main) Create third and fourth files
+    a80e7ca chore: Squash initial and second commits
+    07a06aa chore: Create third and fourth files
 ```
 
