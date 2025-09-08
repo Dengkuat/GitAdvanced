@@ -107,3 +107,9 @@ Successfully rebased and updated refs/heads/main.
     7d4f47d Create Third File
     a80e7ca chore: Squash intial and second commits
 ```
+
+### 5. Advanced Squashing:
+```bash
+    
+```
+
