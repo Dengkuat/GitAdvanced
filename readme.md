@@ -455,4 +455,7 @@ Merge made by the 'ort' strategy.
  feature.txt | 1 +
  1 file changed, 1 insertion(+)
  create mode 100644 feature.txt
+ DENGKUAT@MacBookPro GitAdvanced % git branch -d ft/new-feature
+Deleted branch ft/new-feature (was ab1aba8).
+DENGKUAT@MacBookPro GitAdvanced % 
 ```
