@@ -459,3 +459,8 @@ Merge made by the 'ort' strategy.
 Deleted branch ft/new-feature (was ab1aba8).
 DENGKUAT@MacBookPro GitAdvanced % 
 ```
+
+### 6. Creating a Branch from a Commit:
+```bash
+
+```
