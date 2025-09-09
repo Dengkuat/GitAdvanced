@@ -131,7 +131,14 @@ Successfully rebased and updated refs/heads/main.
 
 ### 7. Reordering Commits:
 ```bash
-    
+    DENGKUAT@MacBookPro GitAdvanced % git log --oneline --graph --decorate
+    * becc4d1 (HEAD -> main, origin/main) complete challenge 5 advanced squashing
+    * 43416d2 Dropped commit message
+    * e9e6d3f Remove old conflicting README files
+    * 856b990 challenge 5
+    * 7cd7169 challenge 4 splitting a commit into 2 separate commits
+    * 5258535 Create Third File
+    * a80e7ca chore: Squash initial and second commits
 ```
 
 
