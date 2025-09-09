@@ -435,8 +435,6 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/Dengkuat/GitAdvanced.git
    fb05364..4433680  main -> main
 DENGKUAT@MacBookPro GitAdvanced % 
-<<<<<<< HEAD
-=======
 ```
 
 ### 4. Local vs. Remote Branches:
@@ -464,6 +462,11 @@ DENGKUAT@MacBookPro GitAdvanced %
 
 ### 6. Creating a Branch from a Commit:
 ```bash
+DENGKUAT@192 GitAdvanced % git checkout -b ft/new-branch-from-commit 339b6a0
+Switched to a new branch 'ft/new-branch-from-commit'
+``` 
 
->>>>>>> bd5820d (creating a branch form a commit)
+### 7. Branch Merging:
+``` bash
+
 ``` 
