@@ -123,3 +123,15 @@ Successfully rebased and updated refs/heads/main.
     07a06aa chore: Create third and fourth files
 ```
 
+### 6. Dropping a Commit:
+```bash
+    DENGKUAT@MacBookPro GitAdvanced % git rebase -i HEAD~3
+    Successfully rebased and updated refs/heads/main.
+```
+
+### 7. Reordering Commits:
+```bash
+    
+```
+
+
