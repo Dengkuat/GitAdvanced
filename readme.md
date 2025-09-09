@@ -462,16 +462,27 @@ DENGKUAT@MacBookPro GitAdvanced %
 
 ### 6. Creating a Branch from a Commit:
 ```bash
-<<<<<<< HEAD
-
-```
-=======
 DENGKUAT@192 GitAdvanced % git checkout -b ft/new-branch-from-commit 339b6a0
 Switched to a new branch 'ft/new-branch-from-commit'
 ``` 
 
 ### 7. Branch Merging:
 ``` bash
+    DENGKUAT@192 GitAdvanced % git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+DENGKUAT@192 GitAdvanced % git merge ft/new-branch-from-commit
+Auto-merging readme.md
+CONFLICT (content): Merge conflict in readme.md
+Automatic merge failed; fix conflicts and then commit the result.
+DENGKUAT@192 GitAdvanced % git add readme.md
+DENGKUAT@192 GitAdvanced % git commit -m "merged the branch created from the commit to the main"
+[main b901f93] merged the branch created from the commit to the main
+``` 
+
+### 8. Branch Rebasing:
+``` bash
 
 ``` 
->>>>>>> ft/new-branch-from-commit
