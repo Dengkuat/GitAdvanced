@@ -462,5 +462,16 @@ DENGKUAT@MacBookPro GitAdvanced %
 
 ### 6. Creating a Branch from a Commit:
 ```bash
+<<<<<<< HEAD
 
 ```
+=======
+DENGKUAT@192 GitAdvanced % git checkout -b ft/new-branch-from-commit 339b6a0
+Switched to a new branch 'ft/new-branch-from-commit'
+``` 
+
+### 7. Branch Merging:
+``` bash
+
+``` 
+>>>>>>> ft/new-branch-from-commit
