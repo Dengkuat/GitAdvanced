@@ -141,4 +141,7 @@ Successfully rebased and updated refs/heads/main.
     * a80e7ca chore: Squash initial and second commits
 ```
 
-
+### 8. Cherry-Picking Commits:
+```bash
+    DENGKUAT@MacBookPro GitAdvanced % git checkout -b ft/branch Switched to a new branch 'ft/branch' DENGKUAT@MacBookPro GitAdvanced % echo "This is test 5 content" > test5.md DENGKUAT@MacBookPro GitAdvanced % git add test5.md DENGKUAT@MacBookPro GitAdvanced % git commit -m "Implemented test 5" [ft/branch 790bf8f] Implemented test 5 1 file changed, 1 insertion(+) create mode 100644 test5.md DENGKUAT@MacBookPro GitAdvanced % git checkout main M       readme.md Switched to branch 'main' Your branch is up to date with 'origin/main'. DENGKUAT@MacBookPro GitAdvanced % git checkout main M       readme.md Already on 'main' Your branch is up to date with 'origin/main'. DENGKUAT@MacBookPro GitAdvanced % git cherry-pick 790bf8f [main 4faafe4] Implemented test 5 Date: Tue Sep 9 15:23:25 2025 +0200 1 file changed, 1 insertion(+) create mode 100644 test5.md DENGKUAT@MacBookPro GitAdvanced % git checkout main M       readme.md Already on 'main' Your branch is ahead of 'origin/main' by 1 commit. (use "git push" to publish your local commits)
+```
