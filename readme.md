@@ -107,7 +107,6 @@ Successfully rebased and updated refs/heads/main.
     7d4f47d Create Third File
     a80e7ca chore: Squash intial and second commits
 ```
-<<<<<<< HEAD 
 
 ### 5. Advanced Squashing:
 ```bash
@@ -385,4 +384,55 @@ file
 750d9d6 HEAD@{97}: commit (initial): chore: Creat
 e initial file
 (END)
+```
+
+# Part 2: Branching Basics (10 Challenges)
+### 1.Feature Branch Creation:
+```bash
+    DENGKUAT@MacBookPro GitAdvanced % git checkout -b ft/new-feature
+    Switched to a new branch 'ft/new-feature'
+    DENGKUAT@MacBookPro GitAdvanced % 
+    DENGKUAT@MacBookPro GitAdvanced % git branch
+* ft/new-feature
+  main
+DENGKUAT@MacBookPro GitAdvanced % 
+```
+
+### 2. Working on the Feature Branch:
+```bash
+DENGKUAT@MacBookPro GitAdvanced % echo "content added to new branch as it is created" > feature.txt 
+DENGKUAT@MacBookPro GitAdvanced % 
+DENGKUAT@MacBookPro GitAdvanced % git add feature.txt
+DENGKUAT@MacBookPro GitAdvanced % git commit -m "Implemented core functionality for new feature"
+[ft/new-feature ab1aba8] Implemented core functionality for new feature
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
+DENGKUAT@MacBookPro GitAdvanced % 
+```
+
+### 3. Switching Back and Making More Changes:
+```bash
+DENGKUAT@MacBookPro GitAdvanced % git checkout ma
+in
+M       readme.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+DENGKUAT@MacBookPro GitAdvanced % 
+DENGKUAT@MacBookPro GitAdvanced % echo "Wagwan to readme.txt" > readme.txt
+DENGKUAT@MacBookPro GitAdvanced % git add readme.txt
+DENGKUAT@MacBookPro GitAdvanced % git commit -m "Updated project readme"
+[main 4433680] Updated project readme
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.txt
+DENGKUAT@MacBookPro GitAdvanced % git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 296 bytes | 296.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Dengkuat/GitAdvanced.git
+   fb05364..4433680  main -> main
+DENGKUAT@MacBookPro GitAdvanced % 
 ```
