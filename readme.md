@@ -484,5 +484,67 @@ DENGKUAT@192 GitAdvanced % git commit -m "merged the branch created from the com
 
 ### 8. Branch Rebasing:
 ``` bash
+DENGKUAT@192 GitAdvanced % git checkout ft/new-branch-from-commit
+Switched to branch 'ft/new-branch-from-commit'
+DENGKUAT@192 GitAdvanced % git rebase main
+Successfully rebased and updated refs/heads/ft/new-branch-from-commit.
+DENGKUAT@192 GitAdvanced % git add readme.md
+DENGKUAT@192 GitAdvanced % git rebase --continue
+fatal: No rebase in progress?
+DENGKUAT@192 GitAdvanced % git log --oneline --graph --decorate 
+* 7abbe87 (HEAD -> ft/new-branch-from-commit, main) merged the branch created from the commit to the main
+*   b901f93 merged the branch created from the commit to the main
+|\  
+| * 390220f final updates before merging
+| * 21caf3b added changes
+* | bd5820d creating a branch form a commit
+* | e043d47 (origin/main) deleting future branch after merging it to the main
+* | b9e3d1b deleting future branch after merging it to the main
+|/  
+*   339b6a0 Merge branch 'ft/new-feature'
+|\  
+| * ab1aba8 Implemented core functionality for new feature
+* | 05d232e part 2 challenege 3
+* | 4433680 Updated project readme
+|/  
+* fb05364 complicated git challenges part 1
+* 6d4d75c  Cherry-Picking Commits:
+* 1ab013e  Cherry-Picking Commits:
+*   8b9c0f1 Merge branch 'ft/branch'
+|\  
+| * 790bf8f Implemented test 5
+* | 4faafe4 Implemented test 5
+|/  
+* e3ee35b challenege 7
+* 43416d2 Dropped commit message
+* becc4d1 complete challnege 5 advanced squashing
+* e9e6d3f Remove old conflicting README files
+*   9d5cceb Merge commit 'ced368e'
+|\  
+| * ced368e completed challenge 5 advanceed sqaushing
+| * 128ee9b Create third and fourth files
+* | 856b990 challenge 5
+* | 7cd7169 challenge 4 spliting a commit into 2 separate commi
+ts
+* | 5258535 Create Third File
+|/  
+* a80e7ca chore: Squash intial and second commits
+(END)
+``` 
+
+### 9. Renaming Branches
+```bash
+ DENGKUAT@192 GitAdvanced % git checkout ft/new-branch-from-commit
+M       readme.md
+Already on 'ft/new-branch-from-commit'
+DENGKUAT@192 GitAdvanced % git branch -m ft/new-branch-from-commit ft/improved-branch-name
+DENGKUAT@192 GitAdvanced % git branch
+* ft/improved-branch-name
+  main
+DENGKUAT@192 GitAdvanced % 
+``` 
+
+### 10. Checking Out Detached HEAD:
+```bash
 
 ``` 
