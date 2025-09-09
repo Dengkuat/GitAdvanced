@@ -436,3 +436,23 @@ To https://github.com/Dengkuat/GitAdvanced.git
    fb05364..4433680  main -> main
 DENGKUAT@MacBookPro GitAdvanced % 
 ```
+
+### 4. Local vs. Remote Branches:
+```bash
+Done
+```
+
+### 5. Branch Deletion:
+```bash
+    DENGKUAT@MacBookPro GitAdvanced % git checkout ma
+in
+M       readme.md
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+DENGKUAT@MacBookPro GitAdvanced % git merge ft/new-feature
+hint: Waiting for your editor to close the file..
+Merge made by the 'ort' strategy.
+ feature.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
+```
