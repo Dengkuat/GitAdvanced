@@ -552,18 +552,3 @@ DENGKUAT@192 GitAdvanced %
 
 # Part 3: Advanced Workflows (10+ Challenges)
 ### 1. Stashing Changes:
-``` bash
-DENGKUAT@MacBookPro GitAdvanced % git checkout mai
-n
-M       readme.md
-Already on 'main'
-Your branch is up to date with 'origin/main'.
-DENGKUAT@MacBookPro GitAdvanced % git stash
-Saved working directory and index state WIP on main: b76fd34 Part 2: Branching Basics all challenges completed
-DENGKUAT@MacBookPro GitAdvanced % 
-``` 
-
-### 2. Retrieving Stashed Changes
-``` bash
-
-``` 
