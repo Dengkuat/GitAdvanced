@@ -552,3 +552,38 @@ DENGKUAT@192 GitAdvanced %
 
 # Part 3: Advanced Workflows (10+ Challenges)
 ### 1. Stashing Changes:
+``` bash
+DENGKUAT@MacBookPro GitAdvanced % git checkout mai
+n
+M       readme.md
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+DENGKUAT@MacBookPro GitAdvanced % git stash
+Saved working directory and index state WIP on main: b76fd34 Part 2: Branching Basics all challenges completed
+DENGKUAT@MacBookPro GitAdvanced % git stash stash
+``` 
+
+### 2. Retrieving Stashed Changes
+``` bash
+DENGKUAT@MacBookPro GitAdvanced % git stash list 
+stash@{0}: WIP on main: b76fd34 Part 2: Branching Basics all challenges completed
+stash@{1}: WIP on (no branch): 657793d complete challnege 5 advanced squashing
+stash@{2}: WIP on (no branch): 657793d complete challnege 5 advanced squashing
+DENGKUAT@MacBookPro GitAdvanced % git stash pop
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (c834e5ec47953b6b99ecfbf5bfec4e792da9e0ef)
+DENGKUAT@MacBookPro GitAdvanced % 
+``` 
+
+### 3. Branch Merging Conflicts (Continued)
+``` bash
+
+``` 
