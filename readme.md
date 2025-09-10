@@ -609,5 +609,7 @@ DENGKUAT@MacBookPro GitAdvanced % git commit -m "Merged changes from main and co
 DENGKUAT@MacBookPro GitAdvanced % 
 ``` 
 
-this line is intially made in the main branch
-this is edited from the future branch 
+### 4. Resolving Merge Conflicts with a Merge Tool:
+``` bash
+
+``` 
