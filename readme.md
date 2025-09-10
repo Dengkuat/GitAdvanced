@@ -585,7 +585,28 @@ DENGKUAT@MacBookPro GitAdvanced %
 
 ### 3. Branch Merging Conflicts (Continued)
 ``` bash
-
+DENGKUAT@MacBookPro GitAdvanced % git checkout -b conflict-branch
+Switched to a new branch 'conflict-branch'
+DENGKUAT@MacBookPro GitAdvanced % git add readme.md
+DENGKUAT@MacBookPro GitAdvanced % git commit -m "this was edited from the conflict branch"
+[conflict-branch e537c9c] this was edited from the conflict branch
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+DENGKUAT@MacBookPro GitAdvanced % git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+DENGKUAT@MacBookPro GitAdvanced % git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+DENGKUAT@MacBookPro GitAdvanced % git merge conflict-branch
+Auto-merging readme.md
+CONFLICT (content): Merge conflict in readme.md
+Automatic merge failed; fix conflicts and then commit the result.
+DENGKUAT@MacBookPro GitAdvanced % git add readme.md
+DENGKUAT@MacBookPro GitAdvanced % git commit -m "Merged changes from main and conflict-branch"
+[main d7c9e37] Merged changes from main and conflict-branch
+DENGKUAT@MacBookPro GitAdvanced % 
 ``` 
 
 this line is intially made in the main branch
