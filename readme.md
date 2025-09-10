@@ -546,5 +546,9 @@ DENGKUAT@192 GitAdvanced %
 
 ### 10. Checking Out Detached HEAD:
 ```bash
-
+    DENGKUAT@192 GitAdvanced % git checkout bd5820d
+    HEAD is now at bd5820d creating a branch form a commit
 ``` 
+
+# Part 3: Advanced Workflows (10+ Challenges)
+### 1. Stashing Changes:
