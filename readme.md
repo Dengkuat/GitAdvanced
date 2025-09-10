@@ -614,4 +614,4 @@ DENGKUAT@MacBookPro GitAdvanced %
 
 ``` 
 
-resolve conflict with merge tool from the main branch
+resolve conflict with merge tool from the conflict-branch2 branch
