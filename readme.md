@@ -616,3 +616,4 @@ DENGKUAT@MacBookPro GitAdvanced %
 
 resolve conflict with merge tool from the conflict-branch2 branch
 This line is from MAIN branch
+This line is from CONFLICT-BRANCH2
