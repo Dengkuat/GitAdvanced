@@ -681,3 +681,29 @@ Your branch is ahead of 'origin/main' by 1 commit.
   (use "git push" to publish your local commits)
 DENGKUAT@MacBookPro GitAdvanced % 
 ``` 
+
+### 6. Ignoring Files/Directories:
+``` bash
+  DENGKUAT@MacBookPro GitAdvanced % touch .gitignore
+DENGKUAT@MacBookPro GitAdvanced % echo "cant rush greatness" > secret.txt
+DENGKUAT@MacBookPro GitAdvanced % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+DENGKUAT@MacBookPro GitAdvanced % 
+
+note : even if we stages and commited the change it wont not be traked or if we pushed it to the remote repo it wouuld simply not show
+``` 
+
+
+
