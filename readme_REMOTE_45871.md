@@ -611,65 +611,8 @@ DENGKUAT@MacBookPro GitAdvanced %
 
 ### 4. Resolving Merge Conflicts with a Merge Tool:
 ``` bash
-DENGKUAT@MacBookPro GitAdvanced % git checkout -b conflict-branch
-Switched to a new branch 'conflict-branch'
-DENGKUAT@MacBookPro GitAdvanced % git add readme.md
-DENGKUAT@MacBookPro GitAdvanced % git commit -m "this was edited from the conflict branch"
-[conflict-branch e537c9c] this was edited from the conflict branch
- 1 file changed, 3 insertions(+), 1 deletion(-)
-DENGKUAT@MacBookPro GitAdvanced % git checkout main
-Switched to branch 'main'
-Your branch is ahead of 'origin/main' by 1 commit.
-  (use "git push" to publish your local commits)
-DENGKUAT@MacBookPro GitAdvanced % git checkout main
-Already on 'main'
-Your branch is ahead of 'origin/main' by 1 commit.
-  (use "git push" to publish your local commits)
-DENGKUAT@MacBookPro GitAdvanced % git merge conflict-branch
-Auto-merging readme.md
-CONFLICT (content): Merge conflict in readme.md
-Automatic merge failed; fix conflicts and then commit the result.
-DENGKUAT@MacBookPro GitAdvanced % git mergetool
-DENGKUAT@MacBookPro GitAdvanced % git status
-On branch main
-Your branch is ahead of 'origin/main' by 4 commits.
-  (use "git push" to publish your local commits)
-
-You have unmerged paths.
-  (fix conflicts and run "git commit")
-  (use "git merge --abort" to abort the merge)
-
-Unmerged paths:
-  (use "git add <file>..." to mark resolution)
-        both modified:   readme.md
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        readme_BACKUP_45871.md
-        readme_BASE_45871.md
-        readme_LOCAL_45871.md
-        readme_REMOTE_45871.md
-
-no changes added to commit (use "git add" and/or "git commit -a")
-DENGKUAT@MacBookPro GitAdvanced % git add readme.md
-DENGKUAT@MacBookPro GitAdvanced % git commit -m "Resolved merge conflict with opendiff"
-[main 20f1dd0] Resolved merge conflict with opendiff
-DENGKUAT@MacBookPro GitAdvanced % 
-``` 
-
-### 5. Understanding Detached HEAD State:
-``` bash
-head is at normal here at it is pointing to main branch and the latest commit
-so every commits will be at main
-DENGKUAT@MacBookPro GitAdvanced % git branch
-  conflict-branch
-  conflict-branch2
-  ft/improved-branch-name
-* main
-  new-branch-from-detached
-DENGKUAT@MacBookPro GitAdvanced % 
-
-so when we checkout git checkout new-branch-from-detached
-then the head gets detached and now points directly to a commit 
 
 ``` 
+
+resolve conflict with merge tool from the conflict-branch2 branch
+This line is from CONFLICT-BRANCH2
