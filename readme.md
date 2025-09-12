@@ -671,5 +671,13 @@ DENGKUAT@MacBookPro GitAdvanced %
 
 so when we checkout git checkout new-branch-from-detached
 then the head gets detached and now points directly to a commit 
+DENGKUAT@MacBookPro GitAdvanced % git checkout -b my-new-branch
+Switched to a new branch 'my-new-branch'
 
+although we can reattach head back to the main branch so it points to latest commits and main branch
+DENGKUAT@MacBookPro GitAdvanced % git checkout main 
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+DENGKUAT@MacBookPro GitAdvanced % 
 ``` 
