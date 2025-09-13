@@ -706,4 +706,48 @@ note : even if we stages and commited the change it wont not be traked or if we 
 ``` 
 
 
+### 7. Working with Tags:
+``` bash
+Create tag on current commit
+git tag v1.0
 
+List tags
+git tag
+
+Push tag to GitHub
+git push origin v1.0
+```
+### 8. Listing and Deleting Tags:
+```bash
+See all tags
+git tag
+
+Delete tag locally
+git tag -d v1.0
+
+Push deletion to remote
+git push origin --delete v1.0
+```
+
+### 9.Pushing Local Work to Remote Repositories:
+```bash
+git push origin main
+
+quick note
+	•	git push → Send your local commits (changes saved in Git) to a remote repository (like GitHub, GitLab, or Bitbucket).
+	•	origin → The default name for the remote repository you cloned or added. It’s basically an alias pointing to the URL of your repo online.
+	•	main → The branch you’re pushing to (in this case, the main branch).
+
+So together:
+
+git push origin main uploads all commits from your local main branch to the main branch in the remote repository named origin.
+```
+
+### 10.  Pulling Changes from Remote Repositories:
+```bash
+git pull origin main
+
+quick note
+	•	git pull = git fetch + git merge
+	•	It gets the latest changes from the remote repository and merges them into your current branch.
+```
